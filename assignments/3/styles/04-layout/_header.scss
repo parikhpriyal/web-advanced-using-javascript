@@ -1,0 +1,91 @@
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 3*$grid-leading;
+    background-color: $color-background;
+    z-index: 50;
+    img{
+        position: relative;
+        width: $grid-column;
+        float: left;
+        margin: 0.5*$grid-gutter-split;
+    }
+    h1{
+        position: relative;
+        float: left;
+        color: $color-header;
+        font-family: $font-header;
+        font-size: 2*$font-size-base;
+        line-height: 3*$grid-leading;
+    }
+    #sign{
+        position: relative;
+        background: none;
+        float: right;
+        color: $border-color;
+        border:{
+            style: solid;
+            width: thick;
+            color: $border-color;
+            radius: 5px;
+        }
+        padding: 5px;
+        margin: 1.5*$grid-gutter-split;
+        cursor: pointer;
+        transition: color 0.25s ease-in;
+        &:hover{
+            color: white;
+        }
+    }
+    #nav-border{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 720px){
+    header{
+        height: 2*$grid-leading;
+        img{    
+            width: 1.5*$grid-leading;
+            margin: 0.5*$grid-gutter-split;
+        }
+        h1{
+            font-family: $font-header;
+            font-size: $font-size-base;
+            line-height: 2*$grid-leading;
+        }
+        #sign{
+            border:{
+                width: 2px;
+            }
+            padding: 3px;
+            margin: $grid-gutter-split;
+        }
+        #nav-border{
+            position: relative;
+            display: block;
+            width: 30px;
+            height: 27px;
+            border: 2px solid $border-color;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: $grid-gutter-split;;
+            #scroll-down{
+                position: relative;
+                margin: auto;
+                margin-top: 8%;
+                display: block;
+                text-align: center;
+                font-size: 20px;
+                z-index: 100;
+                width: 13px;
+                height: 13px;
+                border-bottom: 2px solid $border-color;
+                border-right: 2px solid $border-color;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Book.It</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="shortcut icon" href="img/logo1.png">
+    </head>
+    <body>
+        <!-- header and navigation -->
+        <header>
+            <!-- logo -->
+            <a href="index.html"><img id="logo" src="img/logo1.png" alt='logo'></a>
+            <h1>BOOK.IT</h1>
+            <!-- sign up button -->
+            <div id="sign">Sign in</div>
+            <!-- navigation -->
+            <div id="nav-border">
+                <span id="scroll-down"></span>
+            </div>
+            <nav>
+                <a href="how.html">How It Works</a>
+                <a href="#">Browse</a>
+                <a href="#">FAQs</a>
+            </nav>
+        </header>
+        <!-- sign up box -->
+        <div id="modal">
+            <div id="frame">
+                <div id="close">x</div>   
+                <div id="formformat">
+                    <h2>Welcome!</h2>
+                    <div id="false"></div>
+                    <form name="myform">
+                        <h4>Username:</h4> <input type="text" name="username" id="username">
+                        <h4>Password:</h4> <input type="password" name="password" id="pass"><br>
+                        <input type="submit" value="Log In" style="border-style: solid; border-width: thin; border-color: red; border-radius: 10px; color: red; font-family: Gotham Light; background: black; font-size: 15px; padding: 2%" id="submit">
+                        <input type="hidden" id="isAuthenticated">
+                    </form>
+                </div>
+            </div>  
+        </div>
+        <!-- section 1 -->
+        <section id="backscreen" style="background-image: url('img/library1.jpg');">
+            <h2>People still love paper,<br>people still love books,<br>people still love to collect.<br>You don't collect web sites,<br>you don't collect digital experiences.</h2>
+            <h5> - Richard Powell, Creative Director at Monocle</h5>
+        </section>
+        <!-- section 2 -->
+        <div class="readmore">
+            <h2> It's not just book swapping! <span style = "color: red">It's a community!</span></h2>
+            <div id="container2">
+                <div>
+                    <img src="img/signup.png" alt="signup">
+                    <img style="width:12%" src="img/booksearch.png" alt="search">
+                    <img style="width:13%; margin-left: 10%" src="img/package.png" alt="package">
+                </div>
+                <!-- row for instructions -->
+                <div>
+                    <div class="box"><h3>Sign Up!</h3>Log in and explore!</div>
+                    <div class="box"><h3>Setup!</h3>Create your wishlists and upload your collections!</div>
+                    <div class="box"><h3>Start!</h3>Connect, send and recieve books!</div>   
+                </div>
+                <button>How It Works</button>
+            </div>
+        </div>
+        <!-- section 3 -->
+        <div id="books">  
+            <h2>Recent Updates</h2>
+            <h3>Books Available</h3>
+            <!-- Slider -->
+            <div class="scroll-feature">
+                <div class="scroll">
+                    <img src="img/sl.jpg" alt="Image 1">
+                    <img src="img/tm.jpeg" alt="Image 2">
+                    <img src="img/un.jpg" alt="Image 3">
+                    <img src="img/or.jpg" alt="Image 4">
+                    <img src="img/ka.jpeg" alt="Image 5">
+                    <img src="img/aw.jpg" alt="Image 6">
+                    <img src="img/c2.jpg" alt="Image 7">
+                    <img src="img/bw.png" alt="Image 8">
+                    <img src="img/h1.jpg" alt="Image 9">
+                    <img src="img/or.jpeg" alt="Image 10">
+                    <img src="img/mi.jpg" alt="Image 11">
+                </div>
+            </div>
+            <h3>Books Swapped</h3>
+            <!-- Slider -->
+            <div class="scroll-feature">
+                <div class="scroll">
+                    <img src="img/cc.jpg" alt="Image 1">
+                    <img src="img/mb.jpeg" alt="Image 2">
+                    <img src="img/oth.jpg" alt="Image 3">
+                    <img src="img/gwd.jpeg" alt="Image 4">
+                    <img src="img/tw.jpg" alt="Image 5">
+                    <img src="img/dp.jpg" alt="Image 6">
+                    <img src="img/ji.jpg" alt="Image 7">
+                    <img src="img/fs.jpg" alt="Image 8">
+                    <img src="img/wp.jpg" alt="Image 9">
+                    <img src="img/oms.jpg" alt="Image 10">
+                    <img src="img/bs.jpg" alt="Image 11">
+                </div>
+            </div>
+        </div>
+        <!-- section 4 -->
+        <div id="updates">
+            <h2> <span style="color: red"> Featured </span>for the day! </h2>
+            <div id="window">
+                <div id="slide-container">
+                    <div class="slide">
+                        <img src="img/always.jpg" style="width: 15%;" alt="harrypotter">
+                        <span>Popular Group</span><br>
+                        <span>Hogwarts Chain of Thoughts</span><br>
+                        <p>This group is a Harry Potter fan club with insights from J.K. Rowling steering conversations by disclosing secrets and insights about characters, plots and plans about the Potter series.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/ja.jpg" style="width: 15%;" alt="jeffreyarcher">
+                        <span>Popular Author</span><br>
+                        <span>Jeffrey Archer</span><br>
+                        <p>Jeffrey Archer, Baron Archer of Weston-super-mare, is a renowned author English author. His first book, 'Not A Penny More, Not A Penny Less', was written in 1974. 'Kane and Abel' became his 'New York Times' number one bestseller. His current work includes 'The Clifton Chronicles', a series he intends to complete by 2020.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/hmp.jpeg" style="width: 15%;" alt="hmp">
+                        <span>Popular Book</span><br>
+                        <span>The High Mountains Of Portugal</span><br>
+                        <p>The book is a set of three delicately connected novellas that take place decades apart. With Martel's signature mixture of humor and pathos, these three stories explore the rugged terrain of grief. But they also contain the author's reflections on the connection between storytelling and faith. -The Washington Post</p>
+                    </div>
+                </div>
+            </div>
+            <div id="nav-links">    
+                <ul>
+                    <li class="bullet"></li>
+                    <li class="bullet"></li>
+                    <li class="bullet"></li>
+                </ul>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <!-- menu -->
+            <div>
+                <a href="about.html">About</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="references.html">References</a>
+            </div>
+            <!-- copyrights -->
+            <p>Copyright &copy; 2016 Priyal Parikh</p>
+        </footer>
+
+        <script type="text/javascript" src="scripts/app.js"></script>
+    </body>
+</html>

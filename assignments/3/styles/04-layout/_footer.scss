@@ -1,0 +1,46 @@
+footer{
+    position: relative;
+    float: left;    
+    width: 100%;
+    margin:{
+        top: 4%;
+        bottom: 1%;
+    }
+    text-align: center;
+    font-size: $font-size-base;
+    div{
+        width: 60%;
+        margin: auto;
+        padding-bottom: 1%;
+        a{
+            text-decoration: none;
+            padding:{
+                left: 2.5%;
+                right: 2.5%;
+            }
+            font-family: $font-nav;
+            color: black;
+        }
+        border-bottom: 1px solid red; 
+    }
+    p{
+        font-family: $font-nav;
+        margin-top: 1%;
+    }
+}
+
+@media only screen and (max-width: 720px){
+    footer{
+        div{
+            width: 80%;
+            a{
+                font-size: 0.6*$font-size-base;
+                padding: 2.5%;
+            }
+        }
+        p{
+            font-size: 0.6*$font-size-base;
+            padding: 1%;
+        }
+    }
+}

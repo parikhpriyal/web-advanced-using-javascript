@@ -1,0 +1,742 @@
+// =============================================================================
+// Full width
+// =============================================================================
+
+// All pages
+#backscreen{
+    position: relative;
+    float: left;
+    width: 100vw;
+    height: 92vh;
+    background-color: $color-background;
+    background:{
+        repeat: no-repeat;
+        size: 100% 100%;
+    }
+    h2{
+        font-family: $font-nav;
+        font-size: 2*$font-size-base;
+        text-align: center;
+        padding-top: 200px;
+        line-height: 2*$grid-leading;
+        color: $color-header;
+        animation: opaque 10s linear;
+        animation-direction: alternate;
+    }
+    h5{
+        font-family: $font-nav;
+        text-align: center;
+        color: $color-header;
+        line-height: 3*$grid-leading;
+        animation: opaque 10s linear;
+        animation-direction: alternate;
+    }
+
+    @keyframes opaque{
+        0% { opacity: 0;}
+        100% { opacity: 1;}
+        0% { opacity: 0;}
+    }
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+// Signup modal
+#modal{
+    visibility: hidden;
+        position: fixed;
+        float: right;
+        margin: auto;
+        margin:{
+            left: 70%;
+            top: -100%;
+        }
+        width: 30%;
+        background-color: black;
+        z-index: 30;
+    #frame{
+        #close{
+            width: 30px;
+            height: 30px;
+            color: white;
+            float: right;
+            font-family: $font-nav;
+            cursor: pointer;
+        }
+        #formformat{
+            width: 100%;
+            float: left;
+            text-align: center;
+            font-family: $font-nav;
+            h2{
+                text-align: center;
+                color: white;
+                padding: 5%; 
+                font-size: 200%;
+            }
+            h4{
+                text-align: center;
+                color: white;
+                padding-top: 5%;
+                font-size: 100%;
+            }
+            input{
+                margin:{
+                top: 5%;
+                bottom: 5%;
+                }
+                font-size: 100%;
+            }
+        }
+    }
+}
+
+// Index
+.readmore{
+    position: relative;
+    float: left;
+    margin: auto;
+    width: 100vw;
+    h2{
+        text-align: center;
+        font-family: $font-header;
+        line-height: 2.5*$grid-leading;
+        margin-bottom: 1%;
+    }
+    #container2{
+        width: 60vw;
+        position: relative;
+        margin: auto;
+        div{
+            width: 100%;
+            float: left;
+            img{
+                width: 22%;
+                margin:{
+                    left: 7%;
+                    right: 8%;
+                }
+            }
+            .box{
+                position: relative;
+                width: 25%;
+                padding: 2%;
+                float: left;
+                margin:{
+                    left: 3.5%;
+                }
+                text-align: center;
+                font-size: 0.9*$font-size-base;
+                font-family: $font-nav;
+                line-height: 1.5*$font-size-base;
+            }
+        }
+        button{
+            position: relative;
+            width: 2*$grid-gutter-full;
+            margin:{
+                left: 40%;
+                top: $grid-leading;
+                bottom: $grid-leading;
+            }
+            border-radius: 10px;
+            border: none;
+            background-color: red;
+            font-family: $font-header; 
+            font-size: 0.9*$font-size-base;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                width: 2.5*$grid-gutter-full;
+                color: white;
+            }
+        }
+
+    }
+}
+
+// How it works
+.container{
+    position: relative;
+    margin: auto;
+    width: 60%;
+    div{
+        position: relative;
+        margin: auto;
+        width: 60%;
+        line-height: 1.5*$font-size-base;
+        margin:{
+            top: 1.5*$grid-gutter;
+            bottom: 1.5*$grid-gutter;
+        }
+        font-size: 0.9*$font-size-base;
+        img{
+            position: relative;
+            float: left;
+            margin-right: $grid-gutter;
+            width: 2*$grid-leading;
+        }
+        font-family: $font-nav;
+    }
+    // About
+    h3{
+        width: 80%;
+        margin: auto;
+        margin-top: $grid-leading;
+        font-family: $font-nav;
+        font-size: $font-size-base;
+        line-height: 1.5*$font-size-base;
+        text-align: justify;
+    }
+}
+
+#books{
+    position: relative;
+    float: left;
+    width: 100%;
+    background-color: #e2e2e2;
+    text-align: center;
+    line-height: 2*$font-size-base;
+    h2{
+        font-family: $font-header;
+        line-height: 2.5*$grid-leading;
+    }
+    h3{
+        width: 80%;
+        margin: auto;
+        font-family: $font-nav;
+        border-bottom: 1px solid red;
+    }
+}
+
+#updates{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: auto;
+    h2{
+        text-align: center;
+        font-family: $font-header;
+        line-height: 2.5*$grid-leading;
+    }
+}
+
+// Signed in page
+#dummy{
+    width: 100%; 
+    height: 3*$grid-leading; 
+    position: relative; 
+    float: left;
+}
+.profile{
+    position: relative;
+    float: left;
+    width: 80%;
+    text-align: center;
+    line-height: 2*$font-size-base;
+    margin: auto;
+
+    #bord{
+        float: right; 
+        width: 18%; 
+        margin: auto;
+        margin-top: 3%;
+        font-family: $font-nav;
+        font-size: $font-size-base;
+        #format{
+            position: fixed;
+            width: 18%;
+            background-color: #e2e2e2;
+            z-index: 10;
+            img{
+                width:90%; 
+                margin-top: 20px; 
+                margin-left: 2%;
+            }
+            button{
+                margin-top: 120px;
+            }
+        }
+    }
+    h2{
+        font-family: $font-header;
+        line-height: 2.5*$grid-leading;
+    }
+    h3{
+        width: 60%;
+        margin: auto;
+        font-family: $font-nav;
+        border-bottom: 1px solid red;
+    }
+    button{
+        position: relative;
+        width: 2*$grid-gutter-full;
+        margin:{
+            top: $grid-leading;
+            bottom: $grid-leading;
+        }
+        border-radius: 10px;
+        border: none;
+        background-color: red;
+        font-family: $font-header; 
+        font-size: 0.9*$font-size-base;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+            width: 2.5*$grid-gutter-full;
+            color: white;
+        }
+    }
+}
+
+// Image scroll
+.scroll-feature{
+    width: 60%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    .scroll{
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        img {
+            width: 18%;
+            top: 0;
+            z-index: 0;
+            -webkit-transition: all 100ms;
+            transition: all 100ms;
+            position: relative;
+        }
+    }    
+}
+
+// Content slider
+#window{
+    width: 12*$grid-column;
+    overflow: hidden;
+    margin: auto;
+    #slide-container{
+        width: 36*$grid-column;
+        transition: all .5s ease-in-out;
+        .slide{
+            width: 12*$grid-column;
+            float: left;
+            float: left;
+            white-space: normal;
+            line-height: $grid-leading;
+            img{
+                float: left;
+                margin-right: 10px;
+            }
+            span{
+                float: left;
+                font-weight: bold;
+                font-family: $font-header;
+            }
+            p{
+                float: left;
+                width: 75%;
+                font-family: $font-nav;
+                text-align: justify;
+            }
+        }
+    }
+}
+#nav-links{
+    text-align: center;
+    width: 100%;
+    ul{
+        display: inline-block;
+        li{
+            float: left;
+            text-align: center;
+            margin-left: 10px;
+            cursor: pointer;
+            background-color: black;
+            padding: 5px;
+            border-radius: 100%;
+            border: black 5px solid;
+
+            &:hover{
+                background-color: $color-hover;
+            }
+
+            &.active{
+                background-color: $border-color;
+                color: $border-color;
+
+                &:hover{
+                    background-color: $border-color;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+// =============================================================================
+// Tablets and ipads
+// =============================================================================
+
+@media only screen and (max-width: 960px){
+    #backscreen{
+        height: 95vh;
+    }
+    // Signup modal
+    #modal{
+        visibility: hidden;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0, 0.5);
+        margin:{
+            left: 0;
+            top: 0;
+        }
+        #frame{
+            position: fixed;
+            margin: auto;
+            width: 80%;
+            background-color: black;
+            margin:{
+                left: 10%;
+                top: 50%;   
+            }
+        }
+    }
+    // Signup modal
+    #modal{
+        visibility: hidden;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0, 0.5);
+        margin:{
+            left: 0;
+            top: 0;
+        }
+        #frame{
+            position: fixed;
+            margin: auto;
+            width: 80%;
+            background-color: black;
+            margin:{
+                left: 10%;
+                top: 40%;   
+            }
+        }
+    }
+    // Index
+    .readmore{
+        #container2{
+            button{
+                margin:{
+                    left: 35%;
+                }
+            }
+        }
+    }
+    // How it works
+    .container{
+        width: 80%;
+        div{
+            width: 100%;
+            line-height: 1.25*$font-size-base;
+            font-size: $font-size-base;
+            text-align: justify;
+            img{
+                width: 1.9*$grid-leading;
+            }
+        }
+        
+        // About
+        h3{
+            width: 100%;
+            font-size: $font-size-base;
+        }
+    }
+    //Signed in page
+    .profile{
+        width: 90%;
+        line-height: 2*$font-size-base;
+        text-align: center;
+
+        #bord{
+            #format{
+                position: fixed;
+                width: 18%;
+                text-align: center;
+                padding: 2%;
+                font-size: 0.75*$font-size-base;
+                img{
+                    margin-left: 5%;
+                }
+            }
+        }
+        button{
+            width: 1.5*$grid-gutter-full;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                width: 2.5*$grid-gutter-full;
+                color: white;
+            }
+        }
+    }
+    //Scroll images
+    .scroll-feature{
+        .scroll{
+            img{
+                width: 25%;
+            }
+        }
+    }
+    // Content slider
+    #window{
+        width: 7*$grid-column;
+        #slide-container{
+            width: 21*$grid-column;
+            .slide{
+                width: 7*$grid-column;
+                span{
+                    font-size: $font-size-base;
+                }
+                p{
+                    font-size: $font-size-base;
+                    line-height: 0.9*$grid-leading;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #nav-links{
+        margin-top: 20px;
+        &:hover{
+            background-color: $color-hover;
+        }
+        &.active{
+            background-color: $border-color;
+            color: $border-color;
+        }
+    }
+}
+
+// =============================================================================
+// Phones and small screens
+// =============================================================================
+
+@media only screen and (max-width: 720px){
+    // All pages
+    #backscreen{
+        height: 90vh;
+        background:{
+            size: 150% 100%;
+        }
+        h2{
+            font-size: 1.5*$font-size-base;
+            padding-top: 180px;
+        }
+        h5{
+            font-size: $font-size-base;
+        }
+    }
+
+    // Signup modal
+    #modal{
+        visibility: hidden;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0, 0.5);
+        margin:{
+            left: 0;
+            top: 0;
+        }
+        #frame{
+            position: fixed;
+            margin: auto;
+            width: 80%;
+            background-color: black;
+            margin:{
+                left: 10%;
+                top: 50%;   
+            }
+        }
+    }
+
+    // Index
+    .readmore{
+        h2{
+            width: 65%;
+            font-size: 1.1*$font-size-base;
+            line-height: 1.7*$grid-leading;
+            margin: auto;
+        }
+        #container2{
+            width: 100%;
+            position: relative;
+            margin: auto;
+            div{
+                img{
+                    margin:{
+                        top: 3%;
+                    }
+                }
+                .box{
+                    width: 29%;
+                    padding: 0.2%;
+                    font-size: 0.7*$font-size-base;
+                    line-height: 1.2*$font-size-base;
+                }
+            }
+            button{
+                margin:{
+                    left: 30%;
+                }
+            }
+        }
+    }
+
+    // How it works
+    .container{
+        width: 100%;
+        div{
+            width: 85%;
+            line-height: 1.25*$font-size-base;
+            margin:{
+                top: $grid-gutter;
+                bottom: 1.5*$grid-gutter;
+            }
+            font-size: 0.75*$font-size-base;
+            text-align: justify;
+            img{
+                width: 1.9*$grid-leading;
+            }
+        }
+        
+        // About
+        h3{
+            width: 80%;
+            font-size: 0.8*$font-size-base;
+        }
+    }
+
+    #books{
+        h2{
+            font-size: 1.1*$font-size-base;
+        }
+        h3{
+            font-size: $font-size-base;
+        }
+    }
+
+    #updates{
+        h2{
+            font-size: 1.1*$font-size-base;
+        }
+    }
+
+    #dummy{
+        height: 2*$grid-leading;
+    }
+
+    // Signed in page
+    #windows{
+        background-color: $color-header;
+    }
+    .profile{
+        width: 100%;
+        background-color: #e2e2e2;
+        margin-top: -10px;
+        #bord{
+            position: relative;
+            float: left;
+            width: 100%;
+            margin: auto;
+            background-color: $color-header;
+            #format{
+                position: relative;
+                // float: left;
+                width: 80%;
+                margin: auto;
+                font-size: $font-size-base;
+                font-family: $font-nav;
+                text-align: justify;
+                padding-top: 10px;
+                background-color: $color-header;
+                img{
+                    width: 40%; 
+                    float: left;
+                    margin: auto;
+                    margin-top: 10px; 
+                    // margin-left: 20%;
+                    margin-right: 0.8*$grid-gutter;
+                }
+                button{
+                    position: relative;
+                    margin: auto;
+                    margin:{
+                        top: 10px;
+                        left: 20%;
+                        bottom: $grid-leading;
+                    }
+                }
+            }    
+        }
+        h3{
+            font-size: 0.9*$font-size-base;
+            width: 60%;
+            margin: auto;
+            font-family: $font-nav;
+            border-bottom: 1px solid red;
+        }
+        button{
+            width: 1.5*$grid-gutter-full;
+        }
+    }
+
+    // Image scroll
+    .scroll-feature{
+        .scroll{
+            img {
+                width: 33%;
+            }
+        }    
+    }
+
+    // Content slider
+    #window{
+        width: 5.5*$grid-column;
+        #slide-container{
+            width: 16.5*$grid-column;
+            .slide{
+                width: 5.5*$grid-column;
+                span{
+                    font-size: $font-size-base;
+                }
+                p{
+                    font-size: $font-size-base;
+                    line-height: 0.9*$grid-leading;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #nav-links{
+        margin-top: 20px;
+        &:hover{
+            background-color: $color-hover;
+        }
+        &.active{
+            background-color: $border-color;
+            color: $border-color;
+        }
+    }
+}
